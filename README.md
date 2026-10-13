@@ -26,8 +26,6 @@ Split mode is the default on open: orchestration canvas on top, live-rendered DA
 
 ### Canvas view with auto layout
 
-`start → extract_orders → choose_path → recon_full/recon_fast → notify_team → end`, read back from `docs/examples/order_recon.py`.
-
 ![Canvas view](docs/images/02-canvas-dag.png)
 
 ### Node config form (auto-generated from the Spec)
