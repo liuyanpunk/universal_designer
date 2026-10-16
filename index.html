@@ -5,7 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%236366f1%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238b5cf6%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20fill%3D%22url%28%23bg%29%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M23%2032%20C%2031%2032%2C%2033%2018%2C%2041%2018%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%224.5%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.9%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M23%2032%20C%2031%2032%2C%2033%2046%2C%2041%2046%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%224.5%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.9%22%2F%3E%0A%20%20%3Crect%20x%3D%2210%22%20y%3D%2225%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%3Crect%20x%3D%2240%22%20y%3D%2211%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%3Crect%20x%3D%2240%22%20y%3D%2239%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23ffffff%22%2F%3E%0A%3C%2Fsvg%3E" />
     <link rel="alternate icon" type="image/png" href="data:image/png;base64,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" />
-    <title>Universal Designer</title>
+    <title>Universal Designer | Airflow Drag and Drop UI &amp; DAG Builder</title>
+    <meta name="description" content="Build Apache Airflow DAGs with Universal Designer, a free drag and drop UI. Visually connect tasks, preview Python code, and import or export workflows offline." />
+    <link rel="canonical" href="https://liuyanpunk.github.io/universal_designer/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Universal Designer" />
+    <meta property="og:title" content="Universal Designer | Airflow Drag and Drop UI &amp; DAG Builder" />
+    <meta property="og:description" content="A free, browser-based Airflow drag and drop UI. Build DAGs visually, preview Python code, and import or export workflows without a backend." />
+    <meta property="og:url" content="https://liuyanpunk.github.io/universal_designer/" />
+    <meta property="og:image" content="https://liuyanpunk.github.io/universal_designer/docs/images/01-split-overview.png" />
+    <meta property="og:image:alt" content="Universal Designer showing an Airflow DAG canvas and live Python code preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Universal Designer | Airflow Drag and Drop UI &amp; DAG Builder" />
+    <meta name="twitter:description" content="Build Airflow DAGs with a free drag and drop UI, live Python preview, and offline import and export." />
+    <meta name="twitter:image" content="https://liuyanpunk.github.io/universal_designer/docs/images/01-split-overview.png" />
+    <meta name="twitter:image:alt" content="Universal Designer showing an Airflow DAG canvas and live Python code preview" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Universal Designer",
+        "alternateName": "Universal Orchestration Designer",
+        "url": "https://liuyanpunk.github.io/universal_designer/",
+        "description": "A free, browser-based drag and drop UI for building Apache Airflow DAGs, previewing Python code, and importing or exporting workflows offline.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and a modern web browser.",
+        "isAccessibleForFree": true,
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "screenshot": "https://liuyanpunk.github.io/universal_designer/docs/images/01-split-overview.png",
+        "featureList": [
+          "Drag and drop Airflow DAG editor",
+          "Live Python code preview",
+          "Import and export Airflow DAG files",
+          "TaskGroup grouping and local validation",
+          "Offline use with no backend required",
+          "Uploadable YAML dialect specifications"
+        ]
+      }
+    </script>
+    <style>
+      .designer-about { max-width: 72rem; margin: 0 auto; padding: 2rem 1.5rem; color: #1e293b; line-height: 1.7; }
+      .designer-about h1 { margin: 0 0 1rem; font-size: 1.75rem; font-weight: 700; line-height: 1.3; }
+      .designer-about h2 { margin: 1.5rem 0 .5rem; font-size: 1.25rem; font-weight: 600; }
+      .designer-about p { margin: .75rem 0; }
+      .designer-about ul, .designer-about ol { padding-left: 1.5rem; }
+      .designer-about ul { list-style: disc; }
+      .designer-about ol { list-style: decimal; }
+      .designer-about a { color: #4338ca; text-decoration: underline; }
+    </style>
     <script>
 // Auto-load embedded Airflow 3.x suite spec on startup (no upload needed)
 window.__FLOW_AUTOSUITE__ = {
@@ -133480,5 +133528,46 @@ Dq.__FLOW_DESIGNER_EMBED__
   <body>
     <div id="root"></div>
 
+    <section class="designer-about" aria-labelledby="designer-about-title">
+      <h1 id="designer-about-title">Universal Designer: Airflow Drag and Drop UI</h1>
+      <p>
+        Universal Designer is a free, open-source visual workflow builder.
+        Its drag and drop UI lets you build Apache Airflow 3.x DAGs in your browser:
+        connect tasks on a canvas, configure operators, and preview generated Python code.
+        The designer above is ready to use with the embedded Airflow suite, with no backend or installation required.
+      </p>
+      <h2>A visual DAG builder for Apache Airflow</h2>
+      <ul>
+        <li>Drag operators and sensors onto the canvas and connect task dependencies.</li>
+        <li>Organize tasks into TaskGroups and check workflows with local validation.</li>
+        <li>Preview Python DAG code live, then export a DAG file for your Airflow environment.</li>
+        <li>Import an existing Airflow DAG Python file to edit supported tasks and dependencies visually.</li>
+      </ul>
+      <h2>Get started with the drag and drop editor</h2>
+      <ol>
+        <li>Drag a node from the Vertices palette onto the canvas.</li>
+        <li>Connect nodes and use the Config panel to set task and DAG properties.</li>
+        <li>Review the generated code in Preview, resolve validation errors, and choose Export.</li>
+      </ol>
+      <p>
+        Try importing the
+        <a href="docs/examples/order_recon.py">example Airflow DAG</a>,
+        or read the
+        <a href="https://github.com/liuyanpunk/universal_designer#how-to-use">getting started guide</a>.
+        Export your work before refreshing: canvas data is held in browser memory.
+      </p>
+      <h2>Offline and YAML-driven workflow design</h2>
+      <p>
+        Download <a href="https://github.com/liuyanpunk/universal_designer/blob/main/index.html">the standalone HTML file</a>
+        and open it locally to design workflows offline.
+        Uploadable YAML specifications define node types, configuration forms, validation, and code generation,
+        so the editor can be adapted to other orchestration dialects.
+        See the <a href="https://github.com/liuyanpunk/universal_designer">source code and documentation</a>
+        or the <a href="https://github.com/liuyanpunk/universal_designer/blob/main/README.zh_cn.md" lang="zh-CN">中文文档</a>.
+      </p>
+      <noscript>
+        <p>JavaScript is required to run the interactive designer. You can still read this overview and the documentation linked above.</p>
+      </noscript>
+    </section>
   </body>
 </html>

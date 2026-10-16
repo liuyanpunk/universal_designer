@@ -73,6 +73,34 @@ Click **Upload Spec (YAML)** and pick any suite from `suites/`:
 | `suites/dq-agentflow-suite.yaml` | DQ agent flow (in-house) |
 | `suites/dq-taskflow-suite.yaml` | DQ task workflow (in-house) |
 
+## Search visibility for the hosted page
+
+The page includes a descriptive title, search description, canonical URL, social preview metadata,
+WebApplication structured data, and a visible overview below the full-screen designer.
+The overview is present in the HTML even without JavaScript; the editor remains browser-only and works offline.
+
+These settings and `sitemap.xml` target **https://liuyanpunk.github.io/universal_designer/**,
+the repository's default GitHub Pages URL. To make the page discoverable:
+
+1. Enable GitHub Pages in **Settings → Pages**, publishing the repository root, and confirm the public URL.
+   Both `index.html` and `sitemap.xml` must be deployed along with `docs/images/` for social previews.
+2. If using a custom domain or a different hosting path, update the canonical URL, `og:url`, social image URLs,
+   structured-data URL/screenshot, and the URL in `sitemap.xml` to match the final public HTTPS address.
+   Keep the canonical pointed at the hosted page, not the GitHub source-code page.
+3. Add the hosted URL as a URL-prefix property in [Google Search Console](https://search.google.com/search-console/).
+   Complete Google's ownership verification using the method it provides (for example, an HTML verification file
+   or a verification meta tag). For a domain you control, DNS verification is another option.
+4. Submit `https://liuyanpunk.github.io/universal_designer/sitemap.xml` in Search Console.
+   Inspect the homepage URL, run the live URL test, and request indexing.
+5. Link to the hosted designer from the repository's **About → Website** field and relevant documentation.
+   Monitor indexing and search queries in Search Console after deployment.
+
+Public hosting is required: a local `file://` copy cannot appear in Google search.
+If your host has a `robots.txt`, ensure it permits crawling the page; crawlers only honor that file at the
+origin root (`https://liuyanpunk.github.io/robots.txt`), not under this repository's project path.
+Search engines choose whether to index a page and how to rank it; these improvements do not guarantee
+placement for “Airflow drag and drop UI”, “drag and drop UI”, or “Universal Designer”.
+
 ## Repository Layout
 
 ```
